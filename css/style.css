@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500&display=swap');
+
+:root {
+    --primary-color: #01655F;
+    --primary-color-hover: #00473e;
+    --secondary-color: #7c9592;
+    --highlight-color: #FAAE2A;
+    --highlight-color-hover: #f59b00;
+    --coming-soon-button-color: #abc2c0;
+}
+
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background-color: #F2F7F5;
+}
+
+nav {
+    z-index: 1;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    padding: 0 50px;
+    margin: auto;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+nav .logo {
+    float: left;
+}
+
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav .menu-options {
+    float: right;
+}
+
+nav .menu-options a:not(:first-child) {
+    margin-left: 50px;
+}
+
+.menu-options a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.menu-options a:hover {
+    color: var(--highlight-color);
+}
+
+.main-button {
+    background-color: var(--highlight-color);
+    color: black;
+    padding: 8px 20px;
+    border-radius: 7px;
+    border: none;
+    transition: background-color 0.4s;
+}
+
+.main-button:hover {
+    background-color: var(--highlight-color-hover);
+}
+
+.title-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-bottom: 17px;
+}
+
+.main-text {
+    color: var(--secondary-color);
+    font-size: 19px;
+    padding-bottom: 17px;
+}
+
+.bullet-list ul {
+    list-style: none;
+}
+
+.bullet-list ul li {
+    color: var(--secondary-color);
+    font-size: 19px;
+}
+
+.bullet-list ul li::before {
+    content: "\2022";
+    color: var(--highlight-color); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    /* margin-left: -1em; Also needed for space (tweak if needed) */
+    font-size: 1.2rem;
+}
+
+header {
+    clear: both;
+    background: url("../img/bgdiagram-0ff639a40a15e1ac8caa07b3542df094.png") top right/40vw 100vh no-repeat, url("../img/girlandshibe-7df6c1cfd01d2ea0b25a0c6ef77b6ad8.png") 50vw 396px/400px no-repeat;
+    height: 720px;
+}
+
+header div {
+    position: relative;
+    top: 140px;
+    /* left: 150px; */
+}
+
+header div p {
+    padding-bottom: 25px;
+    padding-left: 100px;
+}
+
+
+header div p:first-child {  /* Main text */
+    width: 80vw;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+header div p:nth-child(2) {  /* sub-text */
+    width: 40vw;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+}
+
+
+header div p:nth-child(3) input, .get-email p input {
+    border: none;
+    font-size: 1.3rem;
+    padding: 16px 20px;
+}
+
+header div p:nth-child(3) input[type=email], .get-email p input[type=email] {
+    width: 400px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.get-email p input[type=button] {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.get-email p input[type=button]:hover {
+    background-color: var(--primary-color-hover);
+}
+
+header div p:nth-child(4) {
+    position: relative;
+    color: var(--secondary-color);
+    padding-left: 120px;
+}
+
+header div p:nth-child(4) a {
+    color: var(--highlight-color);
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.section-01 div {
+    width: 18vw;
+}
+
+.section-01 img {
+    width: 70px;
+}
+
+.section-01 div p:first-of-type, .section-02 .card-info p {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.section-01 div p:nth-of-type(2) {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    padding-top: 15px;
+}
+
+.section-02 {
+    margin-top: 70px; /* create white space between the sections */
+    padding-top: 32px; /* see bg color around more of the content in this section */
+    padding-bottom: 50px;
+    background-color: var(--primary-color);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section-02 div {
+    max-width: 1200px;
+    /* margin: auto; */
+}
+
+.section-02 container {
+    display: flex;
+
+}
+.section-02 container img {
+    height: 20vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.section-02 div container p:first-of-type {
+    color: #fff;
+    /* font-size: 2rem;
+    font-weight: 500; */
+}
+
+.section-02  div container  p:nth-of-type(2) {
+    color: #c6fbff;
+    max-width: 500px;
+    padding-top: 23px; /* padding between the text above and the cards beneath */
+    padding-bottom: 50px;
+}
+
+.section-02 .cards {
+    clear: both;
+    display: flex;
+}
+
+.section-02 .cards > div:nth-child(1) {
+    background: #FFF url(../img/pack_essentials-7aebf72817501ec64c7c5e20af2c18a8.png) -94px -75px/400px 71% no-repeat;
+}
+
+.section-02 .cards > div:nth-child(2) {
+    background: #FFF url(../img/pack_recentgrad-b0a8ed6d000257a79488e52ad6bc3b14.png) -94px -75px/400px 71% no-repeat;
+}
+
+.section-02 .cards > div:nth-child(3) {
+    background: #FFF url(../img/pack_newjob-b0827d2d026e4c1f0d0b6c0cd9b1bb4a.png) -94px -75px/400px 71% no-repeat;
+}
+
+.section-02 .cards > div:nth-child(4) {
+    background: #FFF url(../img/pack_family-57f0b8cf3e82b82fb991cd54ef402fa3.png) -94px -75px/400px 71% no-repeat;
+}
+
+.section-02 .cards > div:nth-child(5) {
+    background: #FFF url(../img/pack_askexpert-ce45936f76d817cc1b94eb641045a4eb.png) -94px -75px/400px 71% no-repeat;
+}
+
+.section-02 .card {
+    height: 281px;
+    max-width: 215px;
+    border-radius: 7%;
+    color: #00473e;
+    flex-basis: 100%;
+    /* background: #FFF url(../img/pack_essentials-7aebf72817501ec64c7c5e20af2c18a8.png) -94px -75px/400px 71% no-repeat; */
+    margin: 0 13px;
+    position: relative;
+}
+
+.section-02 .card-info {
+    position: relative;
+    top: 136px;
+    padding: 0 20px;
+}
+
+.section-02 .card-info p {
+    padding-bottom: 15px;
+}
+
+.section-03 {
+    padding-top: 40px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.grid-1-2-1 {
+    display: grid;
+    grid-template-columns: 30% auto 20%;
+
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.grid-1-2-1 > div {
+    /* background-color: yellow;
+    border: 1px solid red; */
+    align-self: center;
+}
+
+.phone-image {
+    width: 30vw;
+    /* height: 100vh; */
+    box-shadow: -2px 2px 10px #b6b6b6;
+}
+
+.grid-1-2-1 > div:nth-child(2) {
+    padding-left: 50px;
+    max-width: 565px;
+    line-height: 25px;
+}
+
+.paycheck {
+    width: 20vw;
+    /* height: 75vh; */
+    position: absolute;
+    top: 123px;
+    right: 0;
+}
+
+.small-graphic {
+    object-fit: contain;
+    width: 90px;
+}
+
+.transfers {
+    padding: 100px 130px 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.transfers-left {
+    /* max-width: 35vw; */
+    padding-right: 110px;
+    max-width: 600px;
+}
+/* .transfers-right img {
+    height: 100vh;
+} */
+
+.transfers .coming-soon {
+    background: var(--coming-soon-button-color);
+    color: #fff;
+    border-radius: 50vw;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    margin-left: 10px;
+}
+
+.chat {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 60px 0 60px;
+}
+
+.chat-left {
+    padding-right: 110px;
+    max-width: 500px;
+}
+
+.chat-right-vertical {
+    display: none;
+}
+
+.wide-chat-image {
+    width: 57vw;
+    /* height: 85vh; */
+    /* box-shadow: -2px 2px 10px #b6b6b6; */
+}
+
+.banks {
+    padding: 65px 0;
+    background: #fff;
+}
+
+.banks container {
+    display: flex;
+    justify-content: center;
+    padding: 0 60px;
+    max-width: 1105px;;
+    margin: 0 auto;
+}
+
+.banks container .banks-right {
+    padding-left: 25px;
+}
+
+.banks-image {
+    height: 50vh;
+    background: url(../img/banks@2x-ca1edb2ade425783e7008c2b28f1da1b.png) center/cover no-repeat;
+}
+
+.membership {
+    padding: 65px 0;
+    text-align: center;
+}
+
+.membership container {
+    display: flex;
+    justify-content: center;
+}
+
+.membership container div:first-child {
+    background-color: #7C9592;
+    color: #fff;
+    border-radius: 20%;
+    padding: 40px 50px 45px;
+    margin-right: 50px;
+}
+
+.membership container div:first-child p:first-child {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.membership container ul {
+    text-align: initial;
+    line-height: 2.5rem;
+}
+
+.membership container li {
+    text-decoration: none;
+}
+
+.membership container .bullet-list ul li::before {
+    content: "\2713";
+}
+
+.get-email {
+    background-color: #FEB2BA;
+    padding: 65px 0;
+    text-align: center;
+    
+}
+
+.get-email .title-text {
+    color: #fff;  /* override the color in .title-text */
+}
+
+footer * {
+    display: inline-block;
+}
+
+footer {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 65px 50px 60px 65px;
+}
+
+footer div:first-child {
+    flex: 1;
+}
+
+footer .logo div {
+    display: inline;
+}
+
+footer .menu-options li {
+    display: inline;
+}
+
+footer .menu-options li:first-child {
+    padding-left: 60px;
+}
+
+footer .menu-options li:not(:first-child) {
+    padding-left: 30px;
+}
+footer .cat {
+    position: relative;
+}
+
+footer .cat img {
+    width: 90px;
+    position: absolute;
+    top: -20px;
+    right: 30px;
+}
+
+/************************************/
+/*** Display for smaller screens  ***/
+@media only screen and (max-width: 1024px) {
+
+    /* only display Request Access in the nav button section */
+    nav .menu-options a:not(:last-of-type) {
+        display: none;
+    }
+
+    header div p:nth-child(3) input[class=main-button] {
+        display: block;
+        width: 350px;
+        margin: 10px 0;
+    }
+
+    .section-02 .cards {
+        flex-wrap: wrap;
+    }
+
+    .section-02 .card {
+        max-width: 30%;
+        margin-bottom: 50px;
+    }
+
+    .chat-right-vertical {
+        display: initial;
+    }
+
+    .chat-right-2x {
+        display: none;
+    }
+}
+
+/************************************/
+/*** Display for smartphones  ***/
+@media only screen 
+    and (max-width: 768px) {
+/* body {
+    background-color: red;
+    } */
+
+    header {
+        height: inherit;
+    }
+
+    .section-01 {
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+
+    .section-01 div {
+        width: 34vw;
+    }
+
+    .section-02 .card {
+        max-width: 43%;
+    }
+
+    .grid-1-2-1 {
+        display: grid;
+        grid-template-columns: auto;
+    
+        /* max-width: 1200px; */
+        margin: auto;
+    }
+    .item-1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        margin-top: 50px;
+    }
+    
+    .item-1 img, .transfers-right img {
+        height: inherit;
+        width: 82vw;    
+    }
+
+    .item-2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+    }
+    .item-3 {
+        display: none;
+    }
+
+    .transfers {
+        flex-wrap: wrap;
+        padding: 100px 66px;
+    }
+
+    .transfers-left {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .chat {
+        flex-wrap: wrap;
+    }
+
+    .chat-left {
+        padding-right: 0;
+    }
+
+    .banks container {
+        flex-wrap: wrap;
+    }
+
+    .banks-image {
+        height: 17vh;
+        width: 86vw;
+        margin: auto;
+    }
+
+    .membership container {
+        flex-wrap: wrap;
+    }
+
+    .membership container div:first-child {
+        max-width: 200px;
+        flex-basis: 35%;
+        margin-bottom: 50px;
+    }
+
+    .get-email p input[class=main-button] {
+        width: 90vw;
+        margin: 5px auto;
+    }
+
+    .get-email input[type=email] {
+        margin-bottom: 15px;
+    }
+
+    footer * {
+        display: block;
+    }
+
+    footer {
+        padding: 50px 30px 60px 30px;
+    }
+
+    footer .cat img {
+        top: 95px;
+    }
+}
